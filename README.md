@@ -1,65 +1,150 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<h1>Titulo ou Arte do Projeto</h1> 
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+  <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
+  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=Ruby&message=2.6.3&color=red&style=for-the-badge&logo=ruby"/>
+  <img src="http://img.shields.io/static/v1?label=Ruby%20On%20Rails%20&message=6.0.2.2&color=red&style=for-the-badge&logo=ruby"/>
+  <img src="http://img.shields.io/static/v1?label=TESTES&message=%3E100&color=GREEN&style=for-the-badge"/>
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
-## About Laravel
+> Status do Projeto: :heavy_check_mark: :warning: (concluido, em desenvolvimento, etc)
+### Tópicos 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-## Learning Laravel
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+... 
 
-## Laravel Sponsors
+Insira os tópicos do README em links para facilitar a navegação do leitor
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Descrição do projeto 
 
-### Premium Partners
+<p align="justify">
+  Descrição breve do projeto compondo um paragrafo ou dois. 
+</p>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Funcionalidades
 
-## Contributing
+:heavy_check_mark: Funcionalidade 1  
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+:heavy_check_mark: Funcionalidade 2  
 
-## Code of Conduct
+:heavy_check_mark: Funcionalidade 3  
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+:heavy_check_mark: Funcionalidade 4  
 
-## Security Vulnerabilities
+## Layout ou Deploy da Aplicação :dash:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+> Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
+... 
 
-## License
+Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Pré-requisitos
+
+:warning: [Node](https://nodejs.org/en/download/)
+
+...
+
+Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação 
+
+## Como rodar a aplicação :arrow_forward:
+
+No terminal, clone o projeto: 
+
+```
+git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
+```
+
+... 
+
+Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
+
+## Como rodar os testes
+
+Coloque um passo a passo para executar os testes
+
+```
+$ npm test, rspec, etc 
+```
+
+## Casos de Uso
+
+Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
+
+Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
+
+## JSON :floppy_disk:
+
+### Usuários: 
+
+|name|email|password|token|avatar|
+| -------- |-------- |-------- |-------- |-------- |
+|Lais Lima|laislima98@hotmail.com|lais123|true|https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9-U_HbQAipum9lWln3APcBIwng7T46hdBA42EJv8Hf6Z4fDT3&usqp=CAU|
+
+... 
+
+Se quiser, coloque uma amostra do banco de dados 
+
+## Iniciando/Configurando banco de dados
+
+Se for necessário configurar algo antes de iniciar o banco de dados insira os comandos a serem executados 
+
+## Linguagens, dependencias e libs utilizadas :books:
+
+- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
+- [React PDF](https://react-pdf.org/)
+
+...
+
+Liste as tecnologias utilizadas no projeto que **não** forem reconhecidas pelo Github 
+
+## Resolvendo Problemas :exclamation:
+
+Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
+
+## Tarefas em aberto
+
+Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
+
+:memo: Tarefa 1 
+
+:memo: Tarefa 2 
+
+:memo: Tarefa 3 
+
+## Desenvolvedores/Contribuintes :octocat:
+
+Liste o time responsável pelo desenvolvimento do projeto
+
+| [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |
+| :---: | :---: | :---: 
+
+## Licença 
+
+The [MIT License]() (MIT)
+
+Copyright :copyright: Ano - Titulo do Projeto
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
