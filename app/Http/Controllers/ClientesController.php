@@ -2,18 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cliente;
 use Illuminate\Http\Request;
 
 class ClientesController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    private $repository;
+
+        public function __construct(Cliente $cliente)
+        {
+            $this->repository =$cliente;
+        }
     public function index()
     {
-        //
+        $clientes =$this->repository->paginate(10);
+
+        return view('admin.pages.clientes.index', [
+            'clientes' => $clientes,
+        ]);
     }
 
     /**
@@ -23,7 +29,8 @@ class ClientesController extends Controller
      */
     public function create()
     {
-        //
+        //return view('admin.pages.clientes.create');
+        return true;
     }
 
     /**
@@ -34,7 +41,9 @@ class ClientesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->repository->create($request->all());
+
+        return redirect()->route('clientes.index');
     }
 
     /**
@@ -45,7 +54,13 @@ class ClientesController extends Controller
      */
     public function show($id)
     {
-        //
+        $cliente = $this->repository->where('id', $id)->first();
+        if (!$cliente)
+            return redirect()->back();
+
+        return view('admin.pages.clientes.show', [
+            'cliente' => $cliente
+        ]);
     }
 
     /**
@@ -79,6 +94,14 @@ class ClientesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $cliente = $this->repository->where('id', $id)->first();
+        if (!$cliente)
+            return redirect()->back();
+
+        $cliente->delete();
+
+        return redirect()->route('clientes.index');
+
     }
+
 }
