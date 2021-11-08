@@ -240,7 +240,7 @@ return [
         ['header' => 'Contas de Clientes'],
         [
             'text' => 'Clientes',
-            'url'  => 'admin/clientes',
+            'url'  => 'admin/cliente',
             'icon' => 'fas fa-fw fa-user',
         ],
     ],

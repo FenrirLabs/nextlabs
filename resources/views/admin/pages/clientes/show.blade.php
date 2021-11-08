@@ -20,7 +20,7 @@
                     <strong>Número da Conta: </strong> {{ $cliente->iban }}
                 </li>
                 <li>
-                    <strong>Saldo Devedor: </strong> R$ {{ $cliente->debit_balance }}
+                    <strong>Saldo Devedor: </strong> R$ {{ number_format($cliente->debit_balance, 2, ',', '.') }}
                 </li>
             </ul>
             <form action="{{ route('clientes.destroy', $cliente->id) }}" method="POST">
