@@ -29,8 +29,8 @@ class ClientesController extends Controller
      */
     public function create()
     {
-        //return view('admin.pages.clientes.create');
-        return true;
+        return view('admin.pages.clientes.create');
+//        return true;
     }
 
     /**
