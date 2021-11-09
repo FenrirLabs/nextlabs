@@ -24,7 +24,11 @@
                             <td>{{ $cliente->name }}</td>
                             <td>{{ $cliente->telephone }}</td>
                             <td>{{ $cliente->cc_id }}</td>
-                            <td style="width=10px;"><a href="{{ route('clientes.show', $cliente->id) }}" class="btn btn-warning">Ver</a></td>
+                            <td style="width=10px;">
+                                <a href="{{ route('clientes.show', $cliente->id) }}" class="btn btn-warning">Ver</a>
+                                &nbsp;
+                                <a href="{{ route('clientes.edit', $cliente->id) }}" class="btn btn-warning">Editar</a>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

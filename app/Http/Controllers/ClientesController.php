@@ -30,7 +30,6 @@ class ClientesController extends Controller
     public function create()
     {
         return view('admin.pages.clientes.create');
-//        return true;
     }
 
     /**
@@ -71,7 +70,14 @@ class ClientesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $cliente = $this->repository->where('id', $id)->first();
+
+        if (!$cliente)
+            return redirect()->back();
+
+        return view('admin.pages.clientes.edit', [
+            'cliente' => $cliente
+        ]);
     }
 
     /**
@@ -81,9 +87,22 @@ class ClientesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+
+        Cliente::updateOrCreate(
+            ['id' => $request->post('cliente_id')],
+            [
+                'name'  =>  $request->post('name'),
+                'telephone' => $request->post('telephone'),
+                'cc_id' => $request->post('cc_id'),
+                'iban' => $request->post('iban'),
+                'debit_balance' => $request->post('debit_balance')
+            ]
+        );
+
+        return redirect()->route('clientes.index');
+
     }
 
     /**
