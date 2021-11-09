@@ -16,7 +16,7 @@
             }
 
             try {
-                $credit = DB::table('credits')
+                $credit = DB::table('clientes')
                     ->where('id', $id)
                     ->get();
 
@@ -32,14 +32,14 @@
             }
         }
 
-        public function updateCredit(Request $request, $phone)
+        public function updateCredit(Request $request, $iban)
         {
-            if(empty($phone)){
-                return response()->json(['status'=>'error', 'message'=> 'Phone is required'], 400);
+            if(empty($iban)){
+                return response()->json(['status'=>'error', 'message'=> 'Iban is required'], 400);
             }
 
             $validator = Validator::make($request->all(), [
-                'IBAN' => 'required',
+                'debit_balance' => 'required',
             ]);
 
             if($validator->fails()){
@@ -47,11 +47,11 @@
             }
 
             try {
-                DB::table('credits')->update($validator->validate());
+                DB::table('clientes')->update($validator->validate());
 
                 try {
 
-                    $creditList = DB::table('credits')->where('phone', $phone)->get();
+                    $creditList = DB::table('clientes')->where('iban', $iban)->get();
 
                     return response()->json([
                         'status' => 'success',
@@ -59,7 +59,7 @@
                         'data' => $creditList
                     ]);
 
-                }catch (Exception $e) {
+                }catch (\Exception $e) {
                     return response()->json(['status'=>'error', 'message'=>$e->getMessage()], 400);
                 }
 
