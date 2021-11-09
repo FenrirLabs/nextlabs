@@ -9,15 +9,15 @@
 
     class CreditController extends Controller
     {
-        public function index($id)
+        public function index($iban)
         {
-            if(empty($id) || $id < 1){
-                return response()->json(['status'=>'error', 'message'=> 'Id available is required'], 400);
+            if(empty($iban)){
+                return response()->json(['status'=>'error', 'message'=> 'Iban is required'], 400);
             }
 
             try {
                 $credit = DB::table('clientes')
-                    ->where('id', $id)
+                    ->where('iban', $iban)
                     ->get();
 
                 $creditInquiry = [
