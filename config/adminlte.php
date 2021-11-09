@@ -241,6 +241,11 @@ return [
         [
             'text' => 'Clientes',
             'url'  => 'admin/cliente',
+            'icon' => 'fas fa-fw fa-users',
+        ],
+        [
+            'text' => 'Usuários',
+            'url'  => 'admin/usuarios',
             'icon' => 'fas fa-fw fa-user',
         ],
     ],
